@@ -17,3 +17,23 @@
   );
   gap: 1.25rem;
 }
+
+.secao-vertical {
+  grid-template-columns: 1fr auto;
+}
+
+.secao-vertical .secao__cartoes {
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overflow-y: hidden;
+  grid-column: 1 / 3;
+  column-gap: 1.25rem;
+}
+
+.secao-vertical .secao__cartoes .cartao a {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
